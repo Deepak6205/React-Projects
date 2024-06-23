@@ -4,15 +4,27 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper button{
+    padding: 10px 20px;
+    background: #b70000;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .accordian{
-    width: 300px;
+    width: 400px;
 
 }
 
 .item{
-    background: #343434;
+    background: #000000;
     margin-bottom: 10px;
     padding: 10px 20px;
 }
