@@ -1,9 +1,12 @@
-import "./App.css";
+//import "./App.css";
 import Accordian from "./components/accordian";
 import ImageSlider from "./components/Image-Slider/ImageSlider";
 import LoadMore from "./components/load-More";
+import QrCodeGenerator from "./components/QR-CODE";
 import RandomColor from "./components/random-color";
 import StartRating from "./components/star rating";
+import TreeView from "./components/tree-view-sideMenu";
+import menus from "./components/tree-view-sideMenu/data";
 function App() {
   return (
     <div className="App">
@@ -24,7 +27,13 @@ function App() {
       /> */}
 
       {/* Load-More component */}
-      <LoadMore/>
+      {/* <LoadMore/> */}
+
+      {/* side menu tree view */}
+      {/* <TreeView menus  = {menus}/> */}
+
+      {/* Qr code generator */}
+        <QrCodeGenerator/>
     </div>
   );
 }
