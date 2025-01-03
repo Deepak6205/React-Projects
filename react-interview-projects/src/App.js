@@ -3,6 +3,7 @@ import Accordian from "./components/accordian";
 import ImageSlider from "./components/Image-Slider/ImageSlider";
 import Class_Component from "./components/interview-practice-questions/Class_Component";
 import { JSX } from "./components/interview-practice-questions/JSX";
+import LightDarkMode from "./components/LightDarkTheme";
 import LoadMore from "./components/load-More";
 import QrCodeGenerator from "./components/QR-CODE";
 import RandomColor from "./components/random-color";
@@ -38,7 +39,10 @@ function App() {
         {/* <QrCodeGenerator/> */}
 
         {/* <JSX/> */}
-        <Class_Component/>
+        {/* <Class_Component/> */}
+
+        {/* Light-Dark-Theme*/}
+        <LightDarkMode/>
     </div>
   );
 }
