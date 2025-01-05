@@ -5,6 +5,8 @@ export default function MenuItem({ item }) {
   const [displayCurrentChild, setDisplayCurrentChild] = useState({});
 
   function handleToggleChildren(getCurrentLabel) {
+    console.log(getCurrentLabel,"daddy")
+    // getCurrentLabel = "Profile"
     setDisplayCurrentChild({
       ...displayCurrentChild,
       [getCurrentLabel]: !displayCurrentChild[getCurrentLabel],
@@ -22,6 +24,8 @@ export default function MenuItem({ item }) {
           </span>
         ) : null}
       </div>
+
+     
 
       {item &&
       item.children &&

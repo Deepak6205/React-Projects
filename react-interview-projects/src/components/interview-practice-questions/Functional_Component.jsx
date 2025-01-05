@@ -1,8 +1,12 @@
+/*
+  passing props in functional component.
+*/
+
 import React from 'react'
 
-const Functional_Component = () => {
+const Functional_Component = ({name}) => {
   return (
-    <div>Functional_Component</div>
+    <div>Functional_Component name = {name}</div>
   )
 }
 

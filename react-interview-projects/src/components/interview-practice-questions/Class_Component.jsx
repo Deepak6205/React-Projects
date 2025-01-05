@@ -1,9 +1,15 @@
+/*
+    for passing props in class based components.
+    we use this.props keyword
+*/
 import React from "react";
 class Class_Component extends React.Component{
     render(){
         return(
             <div>
                 <h2>this is a class based component</h2>
+                <h1>my name is = {this.props.name}</h1>
+                <h2>superman age is = {this.props.age}</h2>
             </div>
         )
     }

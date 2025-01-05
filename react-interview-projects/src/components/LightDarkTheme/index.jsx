@@ -1,5 +1,5 @@
 import useLocalStorage from "./useLocalStorage";
-import './styles.css';
+import "./styles.css";
 export default function LightDarkMode() {
   const [theme, setTheme] = useLocalStorage("theme", "dark");
 
@@ -11,7 +11,11 @@ export default function LightDarkMode() {
   return (
     <div className="light-dark-mode" data-theme={theme}>
       <div className="container">
-        {theme === 'dark' ? <p> O mah gad this world is fuckin DARK 🥶 </p> : <p>thank god lights are ON 🤗</p>}
+        {theme === "dark" ? (
+          <p> O mah gad this world is fuckin DARK 🥶 </p>
+        ) : (
+          <p>thank god lights are ON 🤗</p>
+        )}
         <button onClick={handleToggleTheme}>Change it</button>
       </div>
     </div>
